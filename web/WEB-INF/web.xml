@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>filter.LoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/thankyou.jsp</url-pattern>
+        <url-pattern>/menu.jsp</url-pattern>
+        <url-pattern>/admin.jsp</url-pattern>
+        <url-pattern>/admininfo.jsp</url-pattern>
+        <url-pattern>/datail.jsp</url-pattern>
+        <url-pattern>/feedback.jsp</url-pattern>
+        <url-pattern>/footer.jsp</url-pattern>
+        <url-pattern>/home.jsp</url-pattern>
+        <url-pattern>/login.jsp</url-pattern>
+        <url-pattern>/manageAccount.jsp</url-pattern>
+        <url-pattern>/manageCategory.jsp</url-pattern>
+        <url-pattern>/manageClothes.jsp</url-pattern>
+        <url-pattern>/manageOrder.jsp</url-pattern>
+        <url-pattern>/profile.jsp</url-pattern>
+        <url-pattern>/bill.jsp</url-pattern>
+        <url-pattern>/cart.jsp</url-pattern>
+        <url-pattern>/categoryProduct.jsp</url-pattern>
+        <url-pattern>/purchase.jsp</url-pattern>
+        <url-pattern>/searchResult.jsp</url-pattern>
+        <url-pattern>/sendMail.jsp</url-pattern>
+        <url-pattern>/signup.jsp</url-pattern>
+        <url-pattern>/uupdateAccount.jsp</url-pattern>
+        <url-pattern>/updateCategory.jsp</url-pattern>
+        <url-pattern>/updateClothes.jsp</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

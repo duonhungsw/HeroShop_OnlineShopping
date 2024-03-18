@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}   
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6FE;
+    box-shadow: 0 5PX 15PX rgba(0,0, 0, 0.06);
+}
+#menu{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+#menu li { 
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+#menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.4 ease;
+}
+#menu li a:hover,
+#menu li a:active{
+    color: #088178;
+}
+
+#menu li a.active::after,
+#menu li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178 ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#prodetails{
+    display: flex;
+    margin-top: 100px;
+}
+
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-co1{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px  0;;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    width: 191px;
+  height: 40px;
+  margin-top:41px;
+  background:#1d1a1a;
+  border:none;
+  outline:none;
+  color:#fff;
+  font-weight: bold;
+  border-radius: 20px;
+  transition:0.4s;
+}
+
+#prodetails .single-pro-details button:hover{
+    background-color: #27AE60;
+    
+}
+
+#prodetails .single-pro-details span{
+    line-height: 25px;
+}
+
+#option {
+     border: 1px solid #000; 
+        padding: 5px; 
+}
+
+#description{
+        border-bottom: 1px solid #000; 
+        max-width: 200px;
+        padding-bottom:50px; 
+}
+
+#product_1 {
+    margin: 0 auto;
+    margin-top: 184px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.pro-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.pro {
+    width: 10%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    text-align: center;
+}
+
+.pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.pro .des {
+    padding: 10px 0;
+    text-align: start;
+}
+
+.pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+.pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.pro .des .star {
+    font-size: 12px;
+    color: #ffff00;
+}
+
+.pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+.cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.next img {
+        width: 50px; /* Đặt chiều rộng mong muốn */
+        height: auto; /* Tự động tính toán chiều cao dựa trên tỷ lệ hình ảnh */
+    }
+
