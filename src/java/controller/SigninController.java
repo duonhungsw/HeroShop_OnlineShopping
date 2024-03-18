@@ -41,8 +41,6 @@ public class SigninController extends HttpServlet {
                 request.getRequestDispatcher("login.jsp").forward(request, response);
             } else {
                 session.setAttribute("account", user);
-                CartDAO cart = new CartDAO();
-                int userid = user.getId();
                 if (user.getRole() == 0) {
                     response.sendRedirect("adminHome");
                 } else if (user.getRole() == 1) {

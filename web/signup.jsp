@@ -36,7 +36,7 @@
                 <input type="text" name="address" id="address" class="form-control" placeholder="Address" required="" autofocus="">
                 <input type="email" name="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
                 <input type="password" name="pass" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
-                <input type="password" name="repeatname" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">
+<!--                <input type="password" name="repeatname" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">-->
                 <hr>
                 <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
                 <a href="login" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>

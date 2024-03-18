@@ -17,11 +17,11 @@
                     <!-- Personal Session -->
                     <div class="container mt-5 mb-5">
                         <c:choose>
-                            <c:when test="${empty sessionScope.account}">
+                            <c:when test="${empty requestScope.infoAdmin}">
                                 <h1 class="pb-3 default-cursor">Welcome, <span class="text-warning">null</span>!</h1>
                             </c:when>
                             <c:otherwise>
-                                <h1 class="pb-3 default-cursor">Welcome, <span class="text-warning">${sessionScope.account.fullname}</span>!</h1>
+                                <h1 class="pb-3 default-cursor">Welcome, <span class="text-warning">${requestScope.infoAdmin.fullname}</span>!</h1>
                             </c:otherwise>
                         </c:choose>
 
@@ -33,13 +33,13 @@
                                             Your information
                                         </h3>
                                         <div class="mb-3 fw-bold">
-                                            Full name: <span class="fw-lighter">${sessionScope.account.fullname}</span>
+                                            Full name: <span class="fw-lighter">${requestScope.infoAdmin.fullname}</span>
                                         </div>
                                         <div class="mb-3 fw-bold">
-                                            Email: <span class="fw-lighter">${sessionScope.account.email}</span>
+                                            Email: <span class="fw-lighter">${requestScope.infoAdmin.email}</span>
                                         </div>
                                         <div class="mb-3 fw-bold">
-                                            Phone: <span class="fw-lighter">${sessionScope.account.phone_number eq null ? "Null" : sessionScope.account.phone_number}</span>
+                                            Phone: <span class="fw-lighter">${requestScope.infoAdmin.phone_number eq null ? "Null" : requestScope.infoAdmin.phone_number}</span>
                                         </div>
                                         <!-- Change profile btn -->
                                         <span>
@@ -57,13 +57,13 @@
                                                         </div>
                                                         <div id="update-profile-error" class="form-outline mt-3 fst-italic text-center"
                                                              style="color: red; font-size: 18px;"></div>
-                                                        <form action="AdminInfoController" method="POST" id="update-form">
+                                                        <form action="adminInfo" method="POST" id="update-form">
                                                             <div class="modal-body">
                                                                 <!-- Email -->
                                                                 <div class="form-outline mb-3">
                                                                     <label class="form-label" for="register-mail-input">Your Email</label>
                                                                     <input id="update-profile-mail-input" type="text"
-                                                                           class="form-control form-control-lg" name="email" value="${sessionScope.account.email}" readonly/>
+                                                                           class="form-control form-control-lg" name="email" value="${requestScope.infoAdmin.email}" readonly/>
                                                                 </div>
                                                                 <!-- Name -->
                                                                 <div class="form-outline mb-3">
@@ -71,7 +71,7 @@
                                                                             style="color: red; font-weight: bold">*</span></label>
                                                                     <input type="text" id="form3Example1cg" class="form-control form-control-lg"
                                                                            required placeholder="Nguyen Van A"
-                                                                           name="name" value="${sessionScope.account.fullname}"/>
+                                                                           name="name" value="${requestScope.infoAdmin.fullname}"/>
                                                                 </div>
                                                                 <!-- Phone -->
                                                                 <div class="form-outline mb-5">
@@ -79,7 +79,7 @@
                                                                             style="color: red; font-weight: bold">*</span></label>
                                                                     <input type="text" id="update-profile-input-phone" class="form-control form-control-lg"
                                                                            required placeholder="0791234xx"
-                                                                           name="phone" value="${sessionScope.account.phone_number}"/>
+                                                                           name="phone" value="${requestScope.infoAdmin.phone_number}"/>
                                                                 </div>
                                                                 <div id="update-profile-input-phone-error" class="form-outline mb-2 fst-italic"
                                                                      style="margin-top: -35px; color: red; font-size: 14px;">
