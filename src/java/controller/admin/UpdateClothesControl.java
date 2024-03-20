@@ -101,7 +101,6 @@ public class UpdateClothesControl extends HttpServlet {
             response.sendRedirect("adminClothes");
         } catch (Exception e) {
             e.printStackTrace();
-            // Xử lý ngoại lệ
         }
     }
 

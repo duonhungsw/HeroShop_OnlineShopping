@@ -30,6 +30,8 @@
         <url-pattern>/uupdateAccount.jsp</url-pattern>
         <url-pattern>/updateCategory.jsp</url-pattern>
         <url-pattern>/updateClothes.jsp</url-pattern>
+        <url-pattern>/addToCart</url-pattern>
+        <url-pattern>/cart.jsp</url-pattern>
     </filter-mapping>
     <session-config>
         <session-timeout>

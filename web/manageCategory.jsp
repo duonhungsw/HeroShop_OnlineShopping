@@ -1,8 +1,4 @@
-<%-- 
-    Document   : manageCategory
-    Created on : Mar 8, 2022, 10:47:31 PM
-    Author     : KhoaHD7621
---%>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

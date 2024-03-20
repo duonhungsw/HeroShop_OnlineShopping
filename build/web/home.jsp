@@ -36,7 +36,7 @@
                 <img src="images/img_1.png" alt="">
                 <img src="images/img_2.png" alt="">
                 <img src="images/img_3.png" alt="">
-            </div>
+        </div>
         </div>
         <section id="product_1" class="section-p1"> 
             <h2>Sản phẩm nổi bật</h2>

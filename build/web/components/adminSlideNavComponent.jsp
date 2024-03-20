@@ -1,8 +1,4 @@
-<%-- 
-    Document   : adminSlideNavComponent
-    Created on : Mar 8, 2022, 11:52:14 AM
-    Author     : KhoaHD7621
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div id="layoutSidenav_nav">
